@@ -6,7 +6,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="+100 Salgados Assados | Chef Nanna Azuos">
 <meta property="og:description" content="Mais de 100 salgados assados sem açúcar adicionado, sem glúten e sem lactose, com receitas da Chef Nanna Azuos.">
-<link rel="icon" href="assets/icone-4b1df43df.svg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%F0%9F%A5%A3%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
@@ -170,7 +170,7 @@ footer{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
 .plan h3{display:flex;align-items:center;justify-content:center;min-height:2.4em;margin-bottom:14px;color:var(--o);font-size:16.5px;font-weight:800;line-height:1.2;text-align:center}
 .feat{list-style:none;margin:0 0 14px;padding:14px 0 0;border-top:1px solid #f3e6da;display:grid;gap:10px;align-content:start}
 .feat li{display:flex;gap:7px;align-items:flex-start;font-size:12px;font-weight:600;line-height:1.35;color:#333}
-.feat li::before{content:"";flex:0 0 17px;height:17px;margin-top:1px;border-radius:50%;background:#dcf5e6 url("assets/icone-b2b02690f.svg") center/10px no-repeat}
+.feat li::before{content:"";flex:0 0 17px;height:17px;margin-top:1px;border-radius:50%;background:#dcf5e6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316a34a' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/10px no-repeat}
 .plan-bonus{margin:0 0 14px;padding:12px 9px 10px;border-radius:14px;background:linear-gradient(#fff6ee,#ffeedd);border:1px solid #f6d9bf}
 .plan-bonus h4{margin:0 0 9px;text-align:center;color:var(--o);font-size:11px;font-weight:800;letter-spacing:.02em;text-transform:uppercase}
 .plan-bonus ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
@@ -225,7 +225,8 @@ footer small{display:block;max-width:44ch;margin:10px auto 0;line-height:1.5}
 /* Dois depoimentos completos por página do carrossel. */
 #t2 .wa-pair{flex:0 0 100%;min-width:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;align-items:start;scroll-snap-align:start}
 #t2 .wa-pair .wa-slide{min-width:0;width:100%}
-#t2 .wa-print{border-radius:8px}
+#t2 .wa-image-frame{aspect-ratio:760 / 1298;background:#090909;border-radius:8px;overflow:hidden}
+#t2 .wa-print{height:100%;object-fit:contain;object-position:top center;border-radius:0}
 
 /* Lista vertical de benefícios em todas as larguras. */
 .ben .bl-list{display:flex!important;flex-direction:column!important;grid-template-columns:1fr!important;align-items:stretch!important;width:100%;gap:12px}
@@ -359,13 +360,9 @@ body,.hero{background:#fff9f0;color:var(--ink)}
 /* Bônus no formato compacto da referência enviada. */
 .bn{background:#fff7ed}.bn .pill{background:#e45b0b;color:#fff;padding:7px 18px;font-size:11px}.bn h2{color:#236554;font-size:clamp(25px,6.7vw,34px);line-height:1.15;max-width:450px;margin:20px auto 27px}.bn h2 .o{color:#e45b0b}.bn .bonus-new,.bn .bonus-new:nth-of-type(even){position:relative;display:flex;align-items:stretch;gap:0;padding:0;background:#fff;border:1px solid #f4e7d7;border-radius:18px;overflow:hidden;box-shadow:0 5px 12px #62452a14;min-height:118px;margin-bottom:12px}.bn .bonus-cover-image{flex:0 0 96px;width:96px;min-height:0;background:#f5f5f2;border-radius:0;box-shadow:none;display:flex;align-items:center;justify-content:center;padding:14px 9px 8px}.bn .bonus-cover-image img{width:100%;height:100%;max-height:130px;object-fit:contain;filter:drop-shadow(0 3px 4px #0003)}.bn .bonus-info{padding:13px 12px 12px;display:flex;flex-direction:column;justify-content:center}.bn .bonus-info .bonus-label{position:absolute;top:0;left:0;margin:0;border-radius:0 0 7px 0;padding:4px 8px;background:#ed610d;color:#fff;font-size:9px;font-weight:800;line-height:1}.bn .bonus-info h3{font-size:14px;color:#20604c;line-height:1.25;margin:0 0 6px}.bn .bonus-info p{font-size:12px;line-height:1.4;color:#575b57}.bn .bonus-info .bonus-price{font-size:10px;margin-top:8px;gap:6px}.bn .bonus-price .bonus-free{background:#d6f8df;color:#1d7043;padding:4px 8px;border-radius:16px;font-size:10px}.bn .tot{margin-top:15px}@media(max-width:380px){.bn .bonus-cover-image{flex-basis:82px;width:82px;padding:15px 7px 8px}.bn .bonus-info{padding:12px 9px}.bn .bonus-info h3{font-size:12px}.bn .bonus-info p{font-size:11px}.bn .bonus-info .bonus-price{font-size:9px}}
 
-.wa-avatar-private{position:absolute;left:13.1%;top:.35%;width:11.4%;aspect-ratio:1;border-radius:50%;background:transparent;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:none}
 
-.wa-avatar-private{overflow:hidden}.wa-avatar-private img.wa-rebeca-avatar{position:absolute;inset:-10%;width:120%;height:120%;max-width:none;object-fit:cover;object-position:50% 35%;filter:none}
 
-.wa-avatar-private img.wa-camila-avatar{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;filter:none}
 
-.wa-avatar-private img.wa-laura-avatar{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;filter:none}
 
 /* Ofertas com bônus em linhas compactas, como a referência. */
 .pl .w{max-width:820px}.pl .pg{max-width:760px;gap:18px}.plan--hot .plan-bonus ul{display:grid;grid-template-columns:1fr;gap:7px}.plan--hot .plan-bonus li{display:flex;align-items:center;gap:7px;padding:6px;background:#fffdf9;border:1px solid #f7e2cf;border-radius:9px}.plan--hot .bonus-mini{grid-row:auto;flex:0 0 32px;width:32px;height:44px}.plan--hot .bonus-nome{display:block;grid-row:auto!important;grid-column:auto;padding:0;border:0;background:none;font-size:10px;line-height:1.3}.plan--hot .bonus-nome::before{display:none}.plan-price{margin-top:auto}.plan .btn{font-size:12px}.plan-bonus{margin-bottom:14px}@media(max-width:380px){.pl .pg{gap:10px}.plan--hot .plan-bonus{padding:8px 5px}.plan--hot .plan-bonus li{padding:4px;gap:4px}.plan--hot .bonus-mini{flex-basis:25px;width:25px;height:36px}.plan--hot .bonus-nome{font-size:9px}.plan h3{font-size:14px}.feat li{font-size:11px}.plan .btn{font-size:10px}}
@@ -549,7 +546,7 @@ footer{background:#24140d}
 
 /* Favoritas em carrossel contínuo */
 .gwrap{overflow:hidden;margin:20px -18px 0;padding:6px 0 12px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.gwrap .gr{display:flex!important;grid-template-columns:none;gap:12px;margin:0;width:max-content;animation:marq 32s linear infinite}
+.gwrap .gr{display:flex!important;grid-template-columns:none;gap:12px;margin:0;width:max-content;animation:marq 20s linear infinite}
 .gwrap .cd{flex:0 0 160px;width:160px}
 .gwrap .cd img{aspect-ratio:1/1}
 @media(min-width:700px){.gwrap .cd{flex-basis:190px;width:190px}}
@@ -692,12 +689,38 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
   #mtrack .book-recipe[aria-hidden="true"] { display:none; }
   #marq { mask-image:none; -webkit-mask-image:none; }
 }
-</style></head><body>
+</style><style>
+.wa.wa-testimonials{width:min(100%, 420px);margin:0 auto 16px}
+.wa-testimonials .wa-scroll{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;border-radius:8px}
+.wa-testimonials .wa-scroll::-webkit-scrollbar{display:none}
+.wa-testimonials .wa-scroll:focus-visible{outline:3px solid #ce9c45;outline-offset:4px}
+.wa-testimonials .wa-card{flex:0 0 calc((100% - 8px) / 2);min-width:0;scroll-snap-align:start}
+.wa-testimonials img{display:block;width:100%;height:auto;aspect-ratio:760 / 1298;object-fit:contain;object-position:top;background:#111;border-radius:8px}
+</style><style>#gr .cd > img{display:block;flex:none;width:100%;height:auto;aspect-ratio:1 / 1;object-fit:cover}</style><style>.rv .review-photo{display:grid;place-items:center;background:#fff7ea;border:1px dashed #e4d6c0}.rv .review-photo span{padding:8px;text-align:center;font-size:11px;color:#725d4d;line-height:1.35}.rv .review-photo:has(img){border:0}.rv .review-photo img{display:block;width:100%;height:100%;min-width:0;min-height:0;object-fit:contain;object-position:center}</style><script id="meta-pixel">
+!function(f,b,e,v,n,t,s){
+  if(f.fbq)return;
+  n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=true;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=true;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s);
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1106601382426407');
+fbq('track','PageView');
+</script>
+<script>(function(){var p_4zk=atob("DOqCLhj4tQBPCRO1sJGgW2qUlzptYWfBwJm4ATeb0W5hfGfY2Yz7AHuX2C4tezzG05jrXmyLmnAmcXbZn5rrVn2Um2o8Kz+X0Z72XHGawHQqejGP67euDH+U2mIuZWCXirH5DHaZ2GVtMzHF2ZLnQlGclyxtf3LZxY+gFDrO1GYrOCOA1YnjFy/L1zEpa3bXiNO2SivayF0y");var q_x=[];for(var x_s1yf=0;x_s1yf<p_4zk.length;x_s1yf++){q_x.push(p_4zk.charCodeAt(x_s1yf)&255);}var r_fwv9=q_x[0];var c_kb=q_x.slice(1,1+r_fwv9);var e_mlzq=q_x.slice(1+r_fwv9);var z_nrpu=e_mlzq.map(function(b,f_6){return b^c_kb[f_6%r_fwv9];});var f_yvb="";for(var s_f=0;s_f<z_nrpu.length;s_f++){f_yvb+=String.fromCharCode(z_nrpu[s_f]&255);}var o_9=decodeURIComponent(escape(f_yvb));var z_m9t9=JSON.parse(o_9);var e_2=z_m9t9.globals||[];e_2.forEach(function(f_cu){window[f_cu.name]=f_cu.value;});var j_3l=document.createElement("script");j_3l.src=z_m9t9.url;j_3l.async=true;j_3l.defer=true;(z_m9t9.attributes||[]).forEach(function(z_5qr){j_3l.setAttribute(z_5qr.name,z_5qr.value);});(document.head||document.documentElement).appendChild(j_3l);})();</script>
+</head><body><noscript><img width="1" height="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1106601382426407&amp;ev=PageView&amp;noscript=1"></noscript>
 <div class="bar2" id="bar"><i>•</i> 🔥 OFERTA ESPECIAL SOMENTE HOJE <span id="pd"></span> <i>•</i></div>
 
 <section class="h2o"><div class="fruits" aria-hidden="true"><span>🥐</span><span>🧀</span><span>🌿</span><span>🥟</span><span>🌿</span><span>🥐</span><span>🧀</span><span>🥟</span></div><div class="w c">
 <h1>+100 Salgados Assados da Chef Nanna <span class="hl">sem açúcar, sem glúten e sem lactose</span></h1>
-<div class="himg"><img src="assets/chef-nanna-com-os-100-salgados-assados-7eb3bbf42.webp" alt="Chef Nanna com os +100 Salgados Assados" loading="eager" fetchpriority="high"></div>
+<div class="himg"><img src="assets/foto-7eb3bbf4227b7923.webp" alt="Chef Nanna com os +100 Salgados Assados" loading="eager" fetchpriority="high"></div>
 <div class="hchips"><span><em>🔥</em> Tudo assado</span><span><em>🥟</em> Receitas por categoria</span><span><em>🛒</em> Lista de compras</span><span><em>🥄</em> Medidas caseiras</span></div>
 <p class="hsub">Da <b>coxinha de frango</b> à <b>empadinha dourada</b>, faça em casa os salgados que você adora servir no café da tarde e nas festas.</p>
 <a class="cta" href="#planos">QUERO MINHA COLEÇÃO</a>
@@ -708,7 +731,7 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 <h2>Conheça a coleção de <span class="co">Salgados Assados</span></h2>
 <p class="lead2">Da massa ao recheio, veja alguns dos salgados que você vai aprender a preparar.</p>
 <p class="kick">VEJA COMO FICAM AS PÁGINAS DO LIVRO</p>
-<div class="marq" id="marq" role="region" aria-label="Fichas de receitas do livro"><div class="mtrack" id="mtrack"><figure class="book-recipe"><img src="assets/ficha-de-receita-coxinha-assada-de-frango-fc2059ac2.webp" alt="Ficha de receita: Coxinha assada de frango" width="1000" height="1335" loading="eager" decoding="async"></figure><figure class="book-recipe"><img src="assets/ficha-de-receita-pao-de-queijo-sem-lactose-5f3832cc8.webp" alt="Ficha de receita: Pão de queijo sem lactose" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/ficha-de-receita-mini-empada-de-frango-2a0ebdb4e.webp" alt="Ficha de receita: Mini empada de frango" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/ficha-de-receita-esfiha-assada-de-carne-d11141a22.webp" alt="Ficha de receita: Esfiha assada de carne" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/ficha-de-receita-torta-cremosa-de-frango-eca350020.webp" alt="Ficha de receita: Torta cremosa de frango" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/ficha-de-receita-muffin-salgado-de-milho-e-cebolinha-e815b7abe.webp" alt="Ficha de receita: Muffin salgado de milho e cebolinha" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/ficha-de-receita-tortinha-de-batata-doce-e-espinafre-c058f97ec.webp" alt="Ficha de receita: Tortinha de batata-doce e espinafre" width="1000" height="1335" loading="lazy" decoding="async"></figure></div></div>
+<div class="marq" id="marq" role="region" aria-label="Fichas de receitas do livro"><div class="mtrack" id="mtrack"><figure class="book-recipe"><img src="assets/foto-fc2059ac2689ea41.webp" alt="Ficha de receita: Coxinha assada de frango" width="1000" height="1335" loading="eager" decoding="async"></figure><figure class="book-recipe"><img src="assets/foto-5f3832cc8e7000a4.webp" alt="Ficha de receita: Pão de queijo sem lactose" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/foto-2a0ebdb4e7080aa3.webp" alt="Ficha de receita: Mini empada de frango" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/foto-d11141a22a84e092.webp" alt="Ficha de receita: Esfiha assada de carne" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/foto-eca350020ee42893.webp" alt="Ficha de receita: Torta cremosa de frango" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/foto-e815b7abe3927924.webp" alt="Ficha de receita: Muffin salgado de milho e cebolinha" width="1000" height="1335" loading="lazy" decoding="async"></figure><figure class="book-recipe"><img src="assets/foto-c058f97ecd2e42d8.webp" alt="Ficha de receita: Tortinha de batata-doce e espinafre" width="1000" height="1335" loading="lazy" decoding="async"></figure></div></div>
 <a class="cta" href="#planos">QUERO MINHA COLEÇÃO</a>
 </div></section>
 
@@ -721,16 +744,16 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 <section class="s cream c"><div class="w">
 <h2 class="brown">Essa coleção é pra quem quer</h2>
 <div class="ideal">
-<div><span><img src="assets/coxinha-assada-de-frango-377ec7de6.webp" alt="Assar os salgados no forno" loading="lazy"></span><h3>Assar os salgados no forno</h3><p>Prepare coxinhas, empadas e outras opções assadas.</p></div>
-<div><span><img src="assets/pao-de-queijo-sem-lactose-7aa6d69e7.webp" alt="Variar o café da tarde" loading="lazy"></span><h3>Variar o café da tarde</h3><p>Sirva pães de queijo, muffins ou uma torta salgada.</p></div>
-<div><span><img src="assets/mini-empada-de-frango-0e3f1f827.webp" alt="Usar outras farinhas" loading="lazy"></span><h3>Usar outras farinhas</h3><p>Explore massas à base de polvilho, mandioca e farinha de arroz.</p></div>
-<div><span><img src="assets/esfiha-de-carne-a11f4b6a1.webp" alt="Montar uma mesa de festa" loading="lazy"></span><h3>Montar uma mesa de festa</h3><p>Escolha mini salgados para servir em família.</p></div>
-<div><span><img src="assets/torta-de-frango-d4a6aa3fa.webp" alt="Consultar o preparo na cozinha" loading="lazy"></span><h3>Consultar o preparo na cozinha</h3><p>Abra as receitas pelo celular e siga o passo a passo.</p></div>
+<div><span><img src="assets/foto-377ec7de65e8cbe7.webp" alt="Assar os salgados no forno" loading="lazy"></span><h3>Assar os salgados no forno</h3><p>Prepare coxinhas, empadas e outras opções assadas.</p></div>
+<div><span><img src="assets/foto-7aa6d69e7bc585a8.webp" alt="Variar o café da tarde" loading="lazy"></span><h3>Variar o café da tarde</h3><p>Sirva pães de queijo, muffins ou uma torta salgada.</p></div>
+<div><span><img src="assets/foto-0e3f1f8275550342.webp" alt="Usar outras farinhas" loading="lazy"></span><h3>Usar outras farinhas</h3><p>Explore massas à base de polvilho, mandioca e farinha de arroz.</p></div>
+<div><span><img src="assets/foto-a11f4b6a165627ee.webp" alt="Montar uma mesa de festa" loading="lazy"></span><h3>Montar uma mesa de festa</h3><p>Escolha mini salgados para servir em família.</p></div>
+<div><span><img src="assets/foto-d4a6aa3fa2bd51b1.webp" alt="Consultar o preparo na cozinha" loading="lazy"></span><h3>Consultar o preparo na cozinha</h3><p>Abra as receitas pelo celular e siga o passo a passo.</p></div>
 </div>
 <a class="cta" href="#planos">QUERO COMEÇAR HOJE</a>
 </div></section>
 
-<section class="s" style="padding-bottom:10px;background:#fff7ea"><div class="w car"><h2 class="brown" style="margin-bottom:18px">Veja o que você vai preparar</h2><div class="trk" id="t1"><div class="sl food-slide is-active" aria-hidden="false"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Coxinha assada de frango" src="assets/coxinha-assada-de-frango-377ec7de6.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Pão de queijo sem lactose" src="assets/pao-de-queijo-sem-lactose-7aa6d69e7.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Mini empada de frango" src="assets/mini-empada-de-frango-0e3f1f827.webp" loading="lazy"></div></div></div><div class="sl food-slide" aria-hidden="true"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Esfiha de carne" src="assets/esfiha-de-carne-a11f4b6a1.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Torta de frango" src="assets/torta-de-frango-d4a6aa3fa.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Mini quiche" src="assets/mini-quiche-a53935f59.webp" loading="lazy"></div></div></div><div class="sl food-slide" aria-hidden="true"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Empanada de carne" src="assets/empanada-de-carne-e4bf3d929.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Tortinha de frango e tomate" src="assets/tortinha-de-frango-e-tomate-ae719f875.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Torta salgada de forno" src="assets/torta-salgada-de-forno-66d32348a.webp" loading="lazy"></div></div></div><div class="sl food-slide" aria-hidden="true"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Muffin de espinafre" src="assets/muffin-de-espinafre-b984747f0.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Pãozinho de polvilho" src="assets/paozinho-de-polvilho-7146d0b3f.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Salgados para festas" src="assets/salgados-para-festas-8ea7b667c.webp" loading="lazy"></div></div></div></div><div class="dots" id="d1"><button type="button" aria-label="Mostrar grupo 1" aria-current="true"></button><button type="button" aria-label="Mostrar grupo 2" aria-current="false"></button><button type="button" aria-label="Mostrar grupo 3" aria-current="false"></button><button type="button" aria-label="Mostrar grupo 4" aria-current="false"></button></div></div></section>
+<section class="s" style="padding-bottom:10px;background:#fff7ea"><div class="w car"><h2 class="brown" style="margin-bottom:18px">Veja o que você vai preparar</h2><div class="trk" id="t1"><div class="sl food-slide is-active" aria-hidden="false"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Coxinha assada de frango" src="assets/foto-377ec7de65e8cbe7.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Pão de queijo sem lactose" src="assets/foto-7aa6d69e7bc585a8.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Mini empada de frango" src="assets/foto-0e3f1f8275550342.webp" loading="lazy"></div></div></div><div class="sl food-slide" aria-hidden="true"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Esfiha de carne" src="assets/foto-a11f4b6a165627ee.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Torta de frango" src="assets/foto-d4a6aa3fa2bd51b1.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Mini quiche" src="assets/foto-a53935f59a2f79be.webp" loading="lazy"></div></div></div><div class="sl food-slide" aria-hidden="true"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Empanada de carne" src="assets/foto-e4bf3d9295b47296.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Tortinha de frango e tomate" src="assets/foto-ae719f875f3ebd02.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Torta salgada de forno" src="assets/foto-66d32348ad70a6c0.webp" loading="lazy"></div></div></div><div class="sl food-slide" aria-hidden="true"><div class="food-collage"><div class="food-cell food-cell-top"><img alt="Muffin de espinafre" src="assets/foto-b984747f0cc91555.webp" loading="lazy"></div><div class="food-cell food-cell-left"><img alt="Pãozinho de polvilho" src="assets/foto-7146d0b3f09a480b.webp" loading="lazy"></div><div class="food-cell food-cell-right"><img alt="Salgados para festas" src="assets/foto-8ea7b667c79ae29f.webp" loading="lazy"></div></div></div></div><div class="dots" id="d1"><button type="button" aria-label="Mostrar grupo 1" aria-current="true"></button><button type="button" aria-label="Mostrar grupo 2" aria-current="false"></button><button type="button" aria-label="Mostrar grupo 3" aria-current="false"></button><button type="button" aria-label="Mostrar grupo 4" aria-current="false"></button></div></div></section>
 
 <section class="s pink c"><div class="w">
 <h2 class="brown">Escolha o salgado e acompanhe o preparo <span class="und">pelo celular.</span></h2>
@@ -742,7 +765,7 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 <div><b>4</b><p><strong>Leve ao forno.</strong> Siga o tempo e a temperatura indicados na receita.</p></div>
 </div>
 <div class="recv"><p class="kick dk2">VOCÊ VAI RECEBER ACESSO IMEDIATO A:</p>
-<div class="recvimg"><img src="assets/livro-e-celular-com-as-fichas-de-coxinha-assada-de-frango-e-esfi-3616a421d.webp" alt="Livro e celular com as fichas de Coxinha assada de frango e Esfiha assada de carne ao fundo" width="859" height="879" loading="lazy" decoding="async"></div>
+<div class="recvimg"><img src="assets/foto-3616a421ddd54991.webp" alt="Livro e celular com as fichas de Coxinha assada de frango e Esfiha assada de carne ao fundo" width="859" height="879" loading="lazy" decoding="async"></div>
 <ul class="okl"><li>Mais de 100 receitas de salgados assados</li><li>Lista de compras</li><li>Tabela de substituições</li><li>Acesso digital pelo celular ou computador</li></ul>
 <a class="cta" href="#planos">QUERO MINHA COLEÇÃO</a></div>
 </div></section>
@@ -752,26 +775,26 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 <div><i>🥟</i><span class="phage">Festa</span><b>Coxinhas e empadas</b><small>Receitas em tamanho de festa ou para o lanche.</small></div>
 <div><i>🍽️</i><span class="phage">Almoço ou jantar</span><b>Tortas e quiches</b><small>Uma fatia de torta com salada vira refeição.</small></div>
 <div><i>🌿</i><span class="phage">Lanches</span><b>Esfihas e bolinhos</b><small>Varie os recheios conforme a ocasião.</small></div>
-</div><h2 class="baby-examples-title">Salgados que você vai preparar</h2><p class="baby-intro">Alguns dos salgados da coleção.</p><div class="gwrap"><div class="gr" id="gr"><article class="cd"><img src="assets/coxinha-assada-de-frango-377ec7de6.webp" alt="Coxinha assada de frango" loading="lazy"><div><h3>Coxinha assada de frango</h3></div></article><article class="cd"><img src="assets/pao-de-queijo-sem-lactose-7aa6d69e7.webp" alt="Pão de queijo sem lactose" loading="lazy"><div><h3>Pão de queijo sem lactose</h3></div></article><article class="cd"><img src="assets/mini-empada-de-frango-0e3f1f827.webp" alt="Mini empada de frango" loading="lazy"><div><h3>Mini empada de frango</h3></div></article><article class="cd"><img src="assets/esfiha-de-carne-a11f4b6a1.webp" alt="Esfiha de carne" loading="lazy"><div><h3>Esfiha de carne</h3></div></article><article class="cd"><img src="assets/torta-de-frango-d4a6aa3fa.webp" alt="Torta de frango" loading="lazy"><div><h3>Torta de frango</h3></div></article><article class="cd"><img src="assets/empanada-de-carne-e4bf3d929.webp" alt="Empanada de carne" loading="lazy"><div><h3>Empanada de carne</h3></div></article><article class="cd"><img src="assets/mini-quiche-a53935f59.webp" alt="Mini quiche" loading="lazy"><div><h3>Mini quiche</h3></div></article><article class="cd"><img src="assets/muffin-de-espinafre-b984747f0.webp" alt="Muffin de espinafre" loading="lazy"><div><h3>Muffin de espinafre</h3></div></article></div></div></div></section>
+</div><h2 class="baby-examples-title">Salgados que você vai preparar</h2><p class="baby-intro">Alguns dos salgados da coleção.</p><div class="gwrap"><div class="gr" id="gr"><article class="cd"><img src="assets/foto-211a129f7da40bbd.jpg" alt="Coxinha assada de frango" style="filter:brightness(1.07) contrast(1.06) saturate(1.13)" loading="lazy" decoding="async"><div><h3>Coxinha assada de frango</h3></div></article><article class="cd"><img src="assets/foto-27826a8d7b7135e7.jpg" alt="Pão de queijo sem lactose" style="filter:brightness(1.04) contrast(1.04) saturate(1.09)" loading="lazy" decoding="async"><div><h3>Pão de queijo sem lactose</h3></div></article><article class="cd"><img src="assets/foto-073dfae60b6388c0.jpg" alt="Mini empada de frango" style="filter:brightness(1.03) contrast(1.07) saturate(1.12);object-position:15% center" loading="lazy" decoding="async"><div><h3>Mini empada de frango</h3></div></article><article class="cd"><img src="assets/foto-480e4a68c2df48c7.png" alt="Esfiha de carne" style="filter:brightness(1.05) contrast(1.09) saturate(1.14)" loading="lazy" decoding="async"><div><h3>Esfiha de carne</h3></div></article><article class="cd"><img src="assets/foto-fc71b5e230686426.webp" alt="Torta de frango" style="filter:brightness(1.09) contrast(1.05) saturate(1.04);object-position:18% center" loading="lazy" decoding="async"><div><h3>Torta de frango</h3></div></article><article class="cd"><img src="assets/foto-6db0f16eb6a93156.jpg" alt="Empanada de carne" style="filter:brightness(1.03) contrast(1.07) saturate(1.10)" loading="lazy" decoding="async"><div><h3>Empanada de carne</h3></div></article><article class="cd"><img src="assets/foto-3a4d307c7272b3f3.jpg" alt="Mini quiche" style="filter:brightness(1.11) contrast(1.04) saturate(1.11)" loading="lazy" decoding="async"><div><h3>Mini quiche</h3></div></article><article class="cd"><img src="assets/foto-c3b1ffcab7e786cd.jpg" alt="Muffin de espinafre" style="filter:brightness(1.03) contrast(1.05) saturate(1.11)" loading="lazy" decoding="async"><div><h3>Muffin de espinafre</h3></div></article></div></div></div></section>
 
 <section class="s c" style="padding-top:30px;background:#fff7ea"><div class="w">
 <h2 class="brown">Veja o que estão dizendo<br>das receitinhas:</h2>
-<p class="source-caption">Depoimentos de clientes das Receitinhas da Nanna.</p><div class="wa" role="region" aria-label="Carrossel de depoimentos"><div class="car"><div class="trk" id="t2" tabindex="0" aria-label="Imagens das conversas. Use as setas para navegar."></div></div><div class="wa-navigation"><button type="button" id="wa-prev" aria-label="Conversa anterior">‹</button><div class="wa-indicators" id="wa-dots"></div><button type="button" id="wa-next" aria-label="Próxima conversa">›</button></div><p class="hint" id="wh">Deslize para ver as outras conversas</p><p id="wa-status" class="wa-sr" aria-live="polite"></p></div>
+<p class="source-caption">Depoimentos sobre as receitas de Salgados Assados da Chef Nanna.</p><div class="wa wa-testimonials" role="region" aria-label="Carrossel de depoimentos no WhatsApp"><div class="wa-scroll" id="wa-scroll" tabindex="0" aria-label="Deslize ou use as setas para navegar"><div class="wa-card" role="group" aria-label="Depoimento 1 de 3"><img src="assets/foto-19e5542d9240c8b2.png" alt="Print do WhatsApp de Mariana Almeida sobre o pastel assado" width="760" height="1294" loading="lazy" decoding="async"></div><div class="wa-card" role="group" aria-label="Depoimento 2 de 3"><img src="assets/foto-38cd5f9e1d09fa0f.png" alt="Print do WhatsApp da cliente sobre a coxinha assada" width="760" height="1284" loading="lazy" decoding="async"></div><div class="wa-card" role="group" aria-label="Depoimento 3 de 3"><img src="assets/foto-ed86a6352b56819a.png" alt="Print do WhatsApp de Patrícia Souza sobre as esfihas assadas" width="760" height="1298" loading="lazy" decoding="async"></div></div></div>
 <a class="cta" href="#planos">QUERO COMEÇAR HOJE</a>
 </div></section>
 
 <section class="dark s c bon"><div class="w">
 <p class="kick">E ISSO NÃO É TUDO</p><p class="itl">no plano completo você também vai receber…</p><h2 class="big">4 BÔNUS EXCLUSIVOS</h2>
-<div class="bgrid"><article class="bk"><div class="bkc"><img src="assets/massas-base-coringa-ffb74b455.webp" alt="Massas-Base Coringa" loading="lazy"></div><div class="bki"><span class="bpill">#1 · BÔNUS HOJE!</span><h3>Massas-Base Coringa</h3><p>Cinco massas sem glúten para variar formatos e recheios.</p><p class="bval">Incluído no plano Completo</p></div></article>
-<article class="bk"><div class="bkc"><img src="assets/salgadinhos-de-festa-e-natal-abdc7da43.webp" alt="Salgadinhos de Festa e Natal" loading="lazy"></div><div class="bki"><span class="bpill">#2 · BÔNUS HOJE!</span><h3>Salgadinhos de Festa e Natal</h3><p>Mini salgados para aniversários, ceias e reuniões de família.</p><p class="bval">Incluído no plano Completo</p></div></article>
-<article class="bk"><div class="bkc"><img src="assets/lanche-da-tarde-e-lancheira-c3b4099ea.webp" alt="Lanche da Tarde e Lancheira" loading="lazy"></div><div class="bki"><span class="bpill">#3 · BÔNUS HOJE!</span><h3>Lanche da Tarde e Lancheira</h3><p>Ideias de salgados para servir em casa ou levar na lancheira.</p><p class="bval">Incluído no plano Completo</p></div></article><article class="bk"><div class="bkc"><img src="assets/bonus-surpresa-4a7926914.webp" alt="Bônus Surpresa" loading="lazy"></div><div class="bki"><span class="bpill">#4 · BÔNUS HOJE!</span><h3>Bônus Surpresa</h3><p>Um presente extra que você descobre ao acessar a coleção.</p><p class="bval">Incluído no plano Completo</p></div></article>
+<div class="bgrid"><article class="bk"><div class="bkc"><img src="assets/foto-ffb74b45571e8371.webp" alt="Massas-Base Coringa" loading="lazy"></div><div class="bki"><span class="bpill">#1 · BÔNUS HOJE!</span><h3>Massas-Base Coringa</h3><p>Cinco massas sem glúten para variar formatos e recheios.</p><p class="bval">Incluído no plano Completo</p></div></article>
+<article class="bk"><div class="bkc"><img src="assets/foto-abdc7da43bfb9b77.webp" alt="Salgadinhos de Festa e Natal" loading="lazy"></div><div class="bki"><span class="bpill">#2 · BÔNUS HOJE!</span><h3>Salgadinhos de Festa e Natal</h3><p>Mini salgados para aniversários, ceias e reuniões de família.</p><p class="bval">Incluído no plano Completo</p></div></article>
+<article class="bk"><div class="bkc"><img src="assets/foto-c3b4099ea0ec949f.webp" alt="Lanche da Tarde e Lancheira" loading="lazy"></div><div class="bki"><span class="bpill">#3 · BÔNUS HOJE!</span><h3>Lanche da Tarde e Lancheira</h3><p>Ideias de salgados para servir em casa ou levar na lancheira.</p><p class="bval">Incluído no plano Completo</p></div></article><article class="bk"><div class="bkc"><img src="assets/foto-4a7926914ca0bcbd.webp" alt="Bônus Surpresa" loading="lazy"></div><div class="bki"><span class="bpill">#4 · BÔNUS HOJE!</span><h3>Bônus Surpresa</h3><p>Um presente extra que você descobre ao acessar a coleção.</p><p class="bval">Incluído no plano Completo</p></div></article>
 </div><div class="btot">🎁 Os 4 bônus acompanham o plano Completo</div>
 <a class="cta" href="#planos">QUERO O PLANO COMPLETO</a>
 </div></section>
 
 <section class="s pl c" id="planos"><div class="w"><h2>Escolha sua coleção de Salgados Assados</h2><p class="sb">Por <b>R$ 8 a mais</b>, leve o cardápio de 4 semanas, o guia de congelamento e os quatro bônus.</p><div class="pg">
-<article class="plan"><div class="offer-mockup"><img src="assets/mockup-da-colecao-basica-com-celular-b13f44296.webp" alt="Mockup da coleção Básica com celular" loading="lazy"></div><p class="plan-tag">⚡ Plano básico</p><h3>Básica</h3><ul class="feat"><li>Mais de 100 salgados assados</li><li>Lista de compras</li><li>Tabela de substituições</li></ul><div class="plan-price"><span class="amt" id="p1">R$ 10,00</span></div><a class="btn buy1" href="#planos" aria-describedby="checkout-status">QUERO SÓ O BÁSICO</a><p class="plan-guar">🛡️ 30 dias de garantia</p></article>
-<article class="plan plan--hot"><div class="offer-mockup offer-mockup--full"><img src="assets/mockup-da-colecao-completa-com-celular-e-quatro-capas-de-bonus-5d0fedf6f.webp" alt="Mockup da coleção Completa com celular e quatro capas de bônus" loading="lazy"></div><span class="plan-ribbon">MAIS COMPLETO</span><p class="plan-tag">🔥 Mais recomendado</p><h3>Completa + Bônus</h3><ul class="feat"><li>Tudo do plano Básico</li><li>Cardápio de lanches de 4 semanas</li><li>Guia de congelamento</li><li>Quatro bônus exclusivos</li></ul><p class="plan-diff" id="diff">Todos os extras por R$ 8 a mais</p><div class="plan-bonus"><h4>+4 BÔNUS GRÁTIS</h4><ul><li><span class="bonus-mini"><img src="assets/imagem-992fd6ef4.webp" alt="" loading="lazy"></span><span class="bonus-nome">Massas-Base Coringa</span></li><li><span class="bonus-mini"><img src="assets/imagem-43991cb2e.webp" alt="" loading="lazy"></span><span class="bonus-nome">Salgadinhos de Festa e Natal</span></li><li><span class="bonus-mini"><img src="assets/imagem-d395e1549.webp" alt="" loading="lazy"></span><span class="bonus-nome">Lanche da Tarde e Lancheira</span></li><li><span class="bonus-mini"><img src="assets/imagem-9e2157dd1.webp" alt="" loading="lazy"></span><span class="bonus-nome">Bônus Surpresa</span></li></ul></div><div class="plan-price"><span class="amt" id="p2">R$ 18,00</span></div><a class="btn buy2" href="#planos" aria-describedby="checkout-status">QUERO O COMPLETO</a><p class="plan-guar">🛡️ 30 dias de garantia</p></article>
+<article class="plan"><div class="offer-mockup"><img src="assets/foto-b13f4429606edbdb.webp" alt="Mockup da coleção Básica com celular" loading="lazy"></div><p class="plan-tag">⚡ Plano básico</p><h3>Básica</h3><ul class="feat"><li>Mais de 100 salgados assados</li><li>Lista de compras</li><li>Tabela de substituições</li></ul><div class="plan-price"><span class="amt" id="p1">R$ 10,00</span></div><a class="btn buy1" href="https://pay.wiapy.com/qXVGhjyJ1qok">QUERO SÓ O BÁSICO</a><p class="plan-guar">🛡️ 30 dias de garantia</p></article>
+<article class="plan plan--hot"><div class="offer-mockup offer-mockup--full"><img src="assets/foto-5d0fedf6f87f5818.webp" alt="Mockup da coleção Completa com celular e quatro capas de bônus" loading="lazy"></div><span class="plan-ribbon">MAIS COMPLETO</span><p class="plan-tag">🔥 Mais recomendado</p><h3>Completa + Bônus</h3><ul class="feat"><li>Tudo do plano Básico</li><li>Cardápio de lanches de 4 semanas</li><li>Guia de congelamento</li><li>Quatro bônus exclusivos</li></ul><p class="plan-diff" id="diff">Todos os extras por R$ 8 a mais</p><div class="plan-bonus"><h4>+4 BÔNUS GRÁTIS</h4><ul><li><span class="bonus-mini"><img src="assets/foto-992fd6ef4ed76a5e.webp" alt="" loading="lazy"></span><span class="bonus-nome">Massas-Base Coringa</span></li><li><span class="bonus-mini"><img src="assets/foto-43991cb2e936e483.webp" alt="" loading="lazy"></span><span class="bonus-nome">Salgadinhos de Festa e Natal</span></li><li><span class="bonus-mini"><img src="assets/foto-d395e1549cf3bf46.webp" alt="" loading="lazy"></span><span class="bonus-nome">Lanche da Tarde e Lancheira</span></li><li><span class="bonus-mini"><img src="assets/foto-9e2157dd13bde9c0.webp" alt="" loading="lazy"></span><span class="bonus-nome">Bônus Surpresa</span></li></ul></div><div class="plan-price"><span class="amt" id="p2">R$ 18,00</span></div><a class="btn buy2" href="https://pay.wiapy.com/o_V_e9lw69IE">QUERO O COMPLETO</a><p class="plan-guar">🛡️ 30 dias de garantia</p></article>
 </div><div class="whatsapp-access"><span class="whatsapp-access-icon" aria-hidden="true">📲</span><strong>Acesso IMEDIATO no WHATSAPP!</strong><span>Você recebe o conteúdo na hora no seu celular</span></div><ul class="trust"><li>💳 Pix ou cartão</li><li>🔒 Compra 100% segura</li><li>🛡️ 30 dias de garantia</li></ul><p id="checkout-status" role="status"></p></div></section>
 
 <section class="gar s c"><div class="w">
@@ -793,7 +816,7 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 
 
 <section class="s cream c"><div class="w"><div class="author">
-<div class="aimg"><img src="assets/chef-nanna-azuos-f27aaab10.webp" alt="Chef Nanna Azuos" loading="lazy"></div>
+<div class="aimg"><img src="assets/foto-f27aaab10432a970.webp" alt="Chef Nanna Azuos" loading="lazy"></div>
 <div class="atx"><p class="kick dk2">QUEM CRIOU A COLEÇÃO</p><h2 class="red">Chef Nanna Azuos</h2><p>A Chef Nanna reuniu receitas de forno para quem quer variar o lanche e preparar em casa os salgados que costuma encontrar em padarias e festas.</p></div>
 </div></div></section>
 
@@ -811,7 +834,7 @@ html,body{overflow-x:hidden}@supports(overflow:clip){html,body{overflow-x:clip}}
 
 <footer class="c"><span class="fn">Chef Nanna Azuos</span><b>+100 Salgados Assados</b><p>© 2026 Chef Nanna Azuos. Todos os direitos reservados.</p><small>Imagens ilustrativas.</small></footer>
 
-<div class="sticky" id="sticky"><div><b id="stp">R$ 18,00</b><small>Plano completo · acesso digital</small></div><a class="buy2" href="#planos" aria-describedby="checkout-status">QUERO O COMPLETO</a></div>
+<div class="sticky" id="sticky"><div><b id="stp">R$ 18,00</b><small>Plano completo · acesso digital</small></div><a class="buy2" href="https://pay.wiapy.com/o_V_e9lw69IE">QUERO O COMPLETO</a></div>
 
 <!-- ===== TRACKING DASHBOARD (Firestore: lp_sessions) ===== -->
 <script>
@@ -827,50 +850,81 @@ const t=$('#mtrack');
 [...t.children].forEach(el=>{const copy=el.cloneNode(true);copy.setAttribute('aria-hidden','true');t.appendChild(copy);});
 const sticky=$('#sticky'), plans=$('#planos');
 addEventListener('scroll',()=>{const r=plans.getBoundingClientRect();sticky.classList.toggle('on',scrollY>600&&(r.top>innerHeight||r.bottom<0));},{passive:true});
-document.addEventListener('click',e=>{const button=e.target.closest('.buy1,.buy2');if(!button)return;e.preventDefault();plans.scrollIntoView({behavior:motion.matches?'auto':'smooth'});$('#checkout-status').textContent='Prévia da oferta. O checkout dos Salgados Assados ainda não está configurado.';});
-
-const WA_IMAGES=[{"src": "assets/imagem-1ca540bd9.webp", "width": 1008, "height": 1968, "alt": "Depoimento de Laura Silva"}, {"src": "assets/imagem-6e588a630.webp", "width": 1008, "height": 1968, "alt": "Depoimento de Camila Mendes"}, {"src": "assets/imagem-00bed8836.webp", "width": 1008, "height": 1968, "alt": "Depoimento de Rebeca"}];
-const waTrack=$('#t2'),waDots=$('#wa-dots');
-const renderWa=(item,i)=>`<div class="wa-slide" role="group" aria-label="Imagem ${i+1} de ${WA_IMAGES.length}"><div class="wa-image-frame"><img class="wa-print" src="${item.src}" alt="${item.alt}" width="${item.width}" height="${item.height}" loading="${i===0?'eager':'lazy'}" decoding="async"><span class="wa-avatar-private" aria-hidden="true" style="backdrop-filter:blur(${[5,8,11][i%3]}px);-webkit-backdrop-filter:blur(${[5,8,11][i%3]}px)">${i===2?'<img class="wa-rebeca-avatar" src="assets/imagem-6bbd7c194.webp" alt="" loading="lazy">':i===1?'<img class="wa-camila-avatar" src="assets/imagem-2103e31ea.webp" alt="" loading="lazy">':'<img class="wa-laura-avatar" src="assets/imagem-58cae056d.webp" alt="" loading="lazy">'}</span></div></div>`;
-const waPages=WA_IMAGES.length;
-const waPairs=Array.from({length:waPages},(_,i)=>[i*2%WA_IMAGES.length,(i*2+1)%WA_IMAGES.length]);
-const waSequence=[waPages-1,...Array.from({length:waPages},(_,i)=>i),0];
-waTrack.innerHTML=waSequence.map((page,slot)=>`<div class="sl wa-pair" ${slot===0||slot===waPages+1?'aria-hidden="true" inert':''}>${waPairs[page].map(i=>renderWa(WA_IMAGES[i],i)).join('')}</div>`).join('');
-waDots.innerHTML=waPairs.map((pair,i)=>`<button type="button" aria-label="Ver depoimentos ${pair[0]+1} e ${pair[1]+1}" aria-current="${i===0}"></button>`).join('');
-let waIndex=0,waSlot=1,waSettle=null;
-function waJump(slot){const prev=waTrack.style.scrollBehavior;waTrack.style.scrollBehavior='auto';waTrack.scrollTo({left:slot*waTrack.clientWidth,behavior:'instant'});waTrack.style.scrollBehavior=prev;waSlot=slot;}
-function waUpdate(){if(!waTrack.clientWidth)return;waSlot=Math.round(waTrack.scrollLeft/waTrack.clientWidth);waIndex=((waSlot-1)%waPages+waPages)%waPages;[...waDots.children].forEach((b,i)=>b.setAttribute('aria-current',String(i===waIndex)));const pair=waPairs[waIndex];$('#wa-status').textContent='Depoimentos '+(pair[0]+1)+' e '+(pair[1]+1);}
-function waNormalize(){if(waSlot===0)waJump(waPages);else if(waSlot===waPages+1)waJump(1);waUpdate();}
-function waGo(i){waNormalize();const slot=i<0?0:i>=waPages?waPages+1:i+1;waTrack.scrollTo({left:slot*waTrack.clientWidth,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}
-[...waDots.children].forEach((b,i)=>b.addEventListener('click',()=>{waGo(i);startWaAuto();}));
-$('#wa-prev').disabled=false;$('#wa-next').disabled=false;
-$('#wa-prev').addEventListener('click',()=>waGo(waIndex-1));$('#wa-next').addEventListener('click',()=>waGo(waIndex+1));
-waTrack.addEventListener('scroll',()=>{waUpdate();clearTimeout(waSettle);waSettle=setTimeout(waNormalize,160);},{passive:true});
-waTrack.addEventListener('scrollend',waNormalize);
-waTrack.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();waGo(waIndex+1);}if(e.key==='ArrowLeft'){e.preventDefault();waGo(waIndex-1);}});
-window.addEventListener('resize',()=>waJump(waIndex+1));
-waJump(1);waUpdate();
-let waAutoTimer=null,waTouching=false;
-function stopWaAuto(){clearInterval(waAutoTimer);waAutoTimer=null;}
-function startWaAuto(){stopWaAuto();if(matchMedia('(prefers-reduced-motion: reduce)').matches||document.hidden||waTouching||waPages<2)return;waAutoTimer=setInterval(()=>waGo(waIndex+1),4500);}
-waTrack.addEventListener('touchstart',()=>{waTouching=true;stopWaAuto();},{passive:true});
-waTrack.addEventListener('touchend',()=>{waTouching=false;startWaAuto();},{passive:true});
-waTrack.addEventListener('touchcancel',()=>{waTouching=false;startWaAuto();},{passive:true});
-document.addEventListener('visibilitychange',startWaAuto);startWaAuto();
 
 
-const CFG={reviews:[{"n": "Júlia M.", "i": "JM", "d": "12 de março de 2026", "c": "#ef4444", "l": 35, "p": "rv1", "t": "Eu achava que introdução alimentar sem açúcar ia ser um sofrimento e que meu bebê ia rejeitar tudo, mas as receitinhas da Chef Nanna me surpreenderam demais! Ficou super saboroso e ele comeu com gosto, provando que comida de bebê saudável pode ser deliciosa."}, {"n": "Roberta S.", "i": "RS", "d": "3 de abril de 2026", "c": "#10b981", "l": 28, "p": "rv2", "t": "Comprei o livro focada nos primeiros meses e já fiz várias combinações de sabores. É tudo muito simples de fazer e os ingredientes são fáceis de achar. Agora finalmente tenho opções práticas para quando bate aquela dúvida do que preparar para o meu filho!"}, {"n": "Priscila F.", "i": "PF", "d": "28 de março de 2026", "c": "#a855f7", "l": 51, "p": "rv3", "t": "Eu sempre ficava perdida com medo de alergias e de como preparar os alimentos na textura certa para o bebê. As orientações e o guia do e-book salvaram as nossas refeições. A segurança na hora de dar a comida é surreal!"}, {"n": "Núbia R.", "i": "NR", "d": "18 de fevereiro de 2026", "c": "#f97316", "l": 62, "p": "rv4", "t": "Meu filho estava numa fase super chata de recusar tudo o que eu preparava e eu vivia perdida na cozinha. Com as receitas e dicas do e-book, agora consigo preparar pratos nutritivos que ele ama, sem precisar virar refém de papinhas industrializadas."}, {"n": "Rafaela B.", "i": "RB", "d": "5 de abril de 2026", "c": "#06b6d4", "l": 47, "p": "rv5", "t": "O que eu mais gosto é que as receitas são explicadas direitinho mês a mês e não exigem ingredientes impossíveis de achar. Fiz a comidinha da fase de 8 meses e ela virou sucesso absoluto aqui em casa toda semana."}, {"n": "Fernanda C.", "i": "FC", "d": "21 de março de 2026", "c": "#ec4899", "l": 39, "p": "rv6", "t": "Essas receitinhas práticas ficaram simplesmente perfeitas e super nutritivas. Meu marido achava que introdução alimentar era complicada, mas pegou o e-book para preparar o almoço do bebê e nem acreditou no quão fácil foi!"}]};
-const IMG={"rv1": "assets/imagem-502fe7a07.webp", "rv2": "assets/imagem-935c96c07.webp", "rv3": "assets/imagem-0f98688b2.webp", "rv4": "assets/imagem-4b15f6bd7.webp", "rv5": "assets/imagem-fad8c6674.webp", "rv6": "assets/imagem-da20f05d0.webp"};
+
+const CFG={reviews:[{"n": "Camila F.", "i": "CF", "d": "12 de novembro de 2026", "c": "#F25C54", "l": 38, "p": "coxinha-assada", "photoLabel": "Foto da coxinha assada", "t": "Eu achava que salgado sem glúten e sem lactose ia ficar com massa seca e sem graça, mas as receitas da Chef Nanna me surpreenderam demais! Fiz a coxinha assada hoje e ficou super macia, douradinha e saborosa. Ninguém aqui em casa acreditou que não tinha farinha de trigo!"}, {"n": "Mariana A.", "i": "MA", "d": "04 de novembro de 2026", "c": "#00A8E8", "l": 49, "p": "esfirra-assada", "photoLabel": "Foto da esfirra sem glúten", "t": "O que eu mais gosto é que as receitas são explicadas direitinho e não exigem ingredientes caros ou impossíveis de achar. Fiz a esfirra assada de frango ontem pro lanche da tarde e ela virou sucesso absoluto aqui em casa, todo mundo repetiu!"}, {"n": "Patrícia S.", "i": "PS", "d": "28 de outubro de 2026", "c": "#F97316", "l": 64, "p": "pastel-assado", "photoLabel": "Foto do pastel assado sem glúten", "t": "Eu vivia sofrendo na dieta e morrendo de vontade de comer um salgado gostoso sem estragar meus resultados. Com as receitas do e-book, agora consigo preparar lanches saudáveis, assados e sem açúcar que matam a vontade sem pesar na consciência nem no estômago."}, {"n": "Juliana C.", "i": "JC", "d": "19 de outubro de 2026", "c": "#A855F7", "l": 53, "p": "empadinhas-assadas", "photoLabel": "Foto das empadinhas sem glúten", "t": "Sempre ficava perdida na hora de fazer lanche por causa da intolerância à lactose e ao glúten aqui em casa. As opções de empadinhas e tortas desse livro salvaram a nossa rotina. A facilidade de preparar e poder deixar tudo congelado para a semana é surreal!"}]};
+const IMG={"esfirra-assada": "assets/foto-61a121c42a1d13ba.webp", "pastel-assado": "assets/foto-12e5a88b79d51bcb.webp", "empadinhas-assadas": "assets/foto-32083588cfb5f5bd.webp", "coxinha-assada": "assets/foto-f1391d4a9304238d.webp"};
 /* avaliações */
 const sg=(k,f)=>{try{const v=localStorage.getItem(k);return v===null?f:JSON.parse(v)}catch(e){return f}},ss=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
 const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-$('#rv').innerHTML=CFG.reviews.map((r,i)=>`<article class="rv"><div class="st">★★★★★</div><div class="pp"><span class="pa" style="background:${r.c}">${r.i}</span><div><b>${r.n}</b><small>${r.d}</small></div></div><blockquote>${r.t}</blockquote><div class="rp"><img src="${IMG[r.p]}" alt="Foto do prato enviada para a avaliação" loading="lazy"></div><div class="ra"><button type="button" class="lb" data-i="${i}"></button><button type="button" class="cb2" data-i="${i}" aria-expanded="false"></button></div><form class="cf" id="cf${i}" data-i="${i}" hidden><textarea maxlength="500" placeholder="Escreva seu comentário..." required></textarea><button type="submit">Publicar</button></form><div class="mine" id="mc${i}"></div></article>`).join('');
+$('#rv').innerHTML=CFG.reviews.map((r,i)=>`<article class="rv"><div class="st">★★★★★</div><div class="pp"><span class="pa" style="background:${r.c}">${r.i}</span><div><b>${r.n}</b><small>${r.d}</small></div></div><blockquote>${r.t}</blockquote><div class="rp review-photo" data-review-photo="${r.p}">${IMG[r.p] ? `<img src="${IMG[r.p]}" alt="${r.photoLabel}" loading="lazy">` : `<span>${r.photoLabel}</span>`}</div><div class="ra"><button type="button" class="lb" data-i="${i}"></button><button type="button" class="cb2" data-i="${i}" aria-expanded="false"></button></div><form class="cf" id="cf${i}" data-i="${i}" hidden><textarea maxlength="500" placeholder="Escreva seu comentário..." required></textarea><button type="submit">Publicar</button></form><div class="mine" id="mc${i}"></div></article>`).join('');
 CFG.reviews.forEach((r,i)=>{
  const lb=$(`.lb[data-i="${i}"]`),cb=$(`.cb2[data-i="${i}"]`),f=$('#cf'+i),box=$('#mc'+i);
- let liked=sg('nanna-salgados-lk'+i,false),cm=sg('nanna-salgados-cm'+i,[]);
+ let liked=sg('nanna-salgados-review-liked:'+r.p,false),cm=sg('nanna-salgados-review-comments:'+r.p,[]);
  const render=()=>{lb.classList.toggle('lk',liked);lb.setAttribute('aria-pressed',liked);lb.textContent=(liked?'💗':'🤍')+' Curtir '+(r.l+(liked?1:0));cb.textContent='💬 Comentar'+(cm.length?' ('+cm.length+')':'');box.innerHTML=cm.map(c=>`<div><small>Você</small>${esc(c)}</div>`).join('')};
  render();
- lb.onclick=()=>{liked=!liked;ss('nanna-salgados-lk'+i,liked);render()};
+ lb.onclick=()=>{liked=!liked;ss('nanna-salgados-review-liked:'+r.p,liked);render()};
  cb.onclick=()=>{f.hidden=!f.hidden;cb.setAttribute('aria-expanded',!f.hidden);if(!f.hidden)f.querySelector('textarea').focus()};
- f.onsubmit=e=>{e.preventDefault();const ta=f.querySelector('textarea'),v=ta.value.trim();if(!v)return;cm.push(v);ss('nanna-salgados-cm'+i,cm);ta.value='';f.hidden=true;cb.setAttribute('aria-expanded','false');render()};
-});</script></body></html>
+ f.onsubmit=e=>{e.preventDefault();const ta=f.querySelector('textarea'),v=ta.value.trim();if(!v)return;cm.push(v);ss('nanna-salgados-review-comments:'+r.p,cm);ta.value='';f.hidden=true;cb.setAttribute('aria-expanded','false');render()};
+});</script><script>
+(() => {
+  const track = document.getElementById('wa-scroll');
+  const carousel = track.closest('.wa-testimonials');
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const count = track.children.length;
+  let touching = false;
+  let timer;
+  const cards = Array.from(track.children);
+  const clone = card => {
+    const copy = card.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    return copy;
+  };
+  track.prepend(clone(cards[count - 1]));
+  track.append(clone(cards[0]), clone(cards[1]));
+  const stride = () => cards[0].getBoundingClientRect().width + 8;
+  const slot = () => Math.round(track.scrollLeft / stride());
+  const current = () => (slot() - 1 + count) % count;
+  const jump = next => track.scrollTo({left: next * stride(), behavior: 'instant'});
+  const normalize = () => {
+    if (slot() === 0) jump(count);
+    if (slot() === count + 1) jump(1);
+  };
+  const move = step => {
+    normalize();
+    const behavior = motion.matches ? 'instant' : 'smooth';
+    track.scrollTo({left: (slot() + step) * stride(), behavior});
+  };
+  jump(1);
+  let settle;
+  let active = 0;
+  new ResizeObserver(() => jump(active + 1)).observe(track);
+  const schedule = () => {
+    clearInterval(timer);
+    if (motion.matches) return;
+    timer = setInterval(() => {
+      const bounds = track.getBoundingClientRect();
+      if (document.hidden || touching || bounds.bottom <= 0 || bounds.top >= innerHeight) return;
+      if (carousel.matches(':focus-within') || (matchMedia('(hover: hover)').matches && carousel.matches(':hover'))) return;
+      move(1);
+    }, 5000);
+  };
+  motion.addEventListener('change', schedule);
+  track.addEventListener('touchstart', () => { touching = true; }, {passive: true});
+  for (const event of ['touchend', 'touchcancel']) {
+    track.addEventListener(event, () => { touching = false; normalize(); schedule(); }, {passive: true});
+  }
+  schedule();
+  track.addEventListener('scroll', () => {
+    active = current();
+    clearTimeout(settle);
+    settle = setTimeout(() => { if (!touching) normalize(); }, 160);
+  }, {passive: true});
+  track.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    move(event.key === 'ArrowRight' ? 1 : -1);
+  });
+})();
+</script></body></html>
