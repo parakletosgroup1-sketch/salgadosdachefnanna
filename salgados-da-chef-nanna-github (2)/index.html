@@ -478,10 +478,10 @@ body{background:var(--cr)}
 .cream .fl summary{color:var(--br)}.cream .fl summary:after{content:"▾";background:#ffe9e0;color:var(--co);font-size:14px;padding:0}
 .cream .fl details[open] summary:after{content:"▴";padding:0}
 footer{background:#24140d}
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;padding:10px 14px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px #0002;transform:translateY(110%);transition:transform .3s}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#fff;padding:5px 10px;padding-bottom:calc(5px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 18px #0002;transform:translateY(110%);transition:transform .3s}
 .sticky.on{transform:none}
-.sticky b{display:block;color:var(--br);font-size:19px;font-weight:900;line-height:1.1}.sticky small{font-size:11px;color:#8a6a5a}
-.sticky a{background:linear-gradient(#ff8a6a,var(--co));color:#fff;font-weight:800;font-size:13px;text-decoration:none;padding:13px 18px;border-radius:30px;box-shadow:0 4px 0 var(--br2);white-space:nowrap}
+.sticky b{display:block;color:var(--br);font-size:17px;font-weight:900;line-height:1.1}.sticky small{display:block;font-size:clamp(9px,3vw,11px);line-height:1.2;color:#8a6a5a;white-space:nowrap}
+.sticky a{background:linear-gradient(#ff8a6a,var(--co));color:#fff;font-weight:800;font-size:clamp(10px,3.4vw,13px);text-decoration:none;padding:8px 12px;min-height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:30px;box-shadow:0 2px 0 var(--br2);white-space:nowrap}
 .prep{background:#eef5e9}
 .sp{background:#fff7ea}
 @media(min-width:700px){.ideal{grid-template-columns:1fr 1fr}.inside figure{flex-basis:46%}}
@@ -834,7 +834,7 @@ fbq('track','PageView');
 
 <footer class="c"><span class="fn">Chef Nanna Azuos</span><b>+100 Salgados Assados</b><p>© 2026 Chef Nanna Azuos. Todos os direitos reservados.</p><small>Imagens ilustrativas.</small></footer>
 
-<div class="sticky" id="sticky"><div><b id="stp">R$ 18,00</b><small>Plano completo · acesso digital</small></div><a class="buy2" href="https://pay.wiapy.com/o_V_e9lw69IE">QUERO O COMPLETO</a></div>
+<div class="sticky" id="sticky"><div><b id="stp">R$ 18,00</b><small>Plano completo - vitalício</small></div><a class="buy2" href="https://pay.wiapy.com/o_V_e9lw69IE">QUERO O COMPLETO</a></div>
 
 <!-- ===== TRACKING DASHBOARD (Firestore: lp_sessions) ===== -->
 <script>
